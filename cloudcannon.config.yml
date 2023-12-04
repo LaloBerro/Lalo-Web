@@ -1,0 +1,273 @@
+paths:
+  data: data
+  collections: content
+  includes: layouts
+  layouts: layouts
+  static: static
+  uploads: static/uploads
+  source: ''
+  archetypes: archetypes
+  assets: assets
+  content: content
+  pages: content
+  publish: public
+  config: ''
+collections_config:
+  pages:
+    path: content
+    output: true
+    filter:
+      base: strict
+      exclude:
+        - components.md
+        - posts/_index.md
+        - projects/_index.md
+    parse_branch_index: true
+    icon: wysiwyg
+    _enabled_editors:
+      - visual
+      - content
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      page:
+        path: schemas/pages.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        icon: notes
+  projects:
+    path: content/projects
+    output: true
+    icon: work_outline
+    _enabled_editors:
+      - content
+      - visual
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/projects.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        icon: notes
+  testimonials:
+    path: content/testimonials
+    output: true
+    icon: format_quote
+    preview:
+      subtext:
+        - key: position
+      icon: format_quote
+      gallery:
+        image:
+          - key: image
+        fit: contain
+    _enabled_editors:
+      - data
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/testimonials.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        icon: notes
+  posts:
+    path: content/posts
+    output: true
+    icon: notes
+    _enabled_editors:
+      - content
+      - visual
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+    schemas:
+      default:
+        path: schemas/posts.md
+        reorder_inputs: true
+        hide_extra_inputs: false
+        remove_empty_inputs: false
+        remove_extra_inputs: true
+        icon: notes
+  data:
+    path: data
+    output: false
+    icon: notes
+    disable_add: false
+    disable_add_folder: false
+    disable_file_actions: false
+collections_config_override: false
+collection_groups:
+  - heading: Content
+    collections:
+      - pages
+      - projects
+      - testimonials
+  - heading: Blogging
+    collections:
+      - posts
+      - drafts
+  - heading: Settings
+    collections:
+      - data
+_enabled_editors:
+  - visual
+  - content
+_inputs: {}
+_select_data: {}
+_structures:
+  content_blocks:
+    style: modal
+    id_key: _bookshop_name
+    values:
+      - value:
+          _bookshop_name: blog-section
+          title: ''
+          description_html: ''
+          link_url: ''
+          show_posts: true
+        label: Blog
+        description: Blog Section with heading, a image, a description and a link
+        icon: wysiwyg
+        tags:
+          - Content
+        _inputs: {}
+      - value:
+          _bookshop_name: contact-form
+          form_title: ''
+          form_description: ''
+          form_success_page: ''
+          form_submission_email: ''
+          form_button_text: ''
+        label: Contact Form
+        description: Generic contact form
+        icon: wysiwyg
+        tags:
+          - Text
+        _inputs: {}
+      - value:
+          _bookshop_name: content
+          content_html: ''
+        label: Content
+        description: Generic rich content area
+        icon: wysiwyg
+        tags:
+          - Text
+        _inputs: {}
+      - value:
+          _bookshop_name: hero
+          title: ''
+          description_html: ''
+          image: ''
+          image_alt: ''
+          cta_button: ''
+          cta_button_link: ''
+          works_button: ''
+          works_button_link: ''
+          tags: []
+        label: Hero
+        description: Page hero with the heading, description, buttons, and an image
+        icon: wysiwyg
+        tags:
+          - Structure
+          - Text
+          - Links
+        _inputs:
+          tags:
+            type: array
+            options:
+              structures:
+                style: select
+                values:
+                  - label: Tag
+                    icon: add_box
+                    value:
+                      text: ''
+                    _inputs: {}
+            cascade: true
+      - value:
+          _bookshop_name: newsletter
+          newsletter_title: ''
+          newsletter_description: ''
+          newsletter_identifier: ''
+          newsletter_button: ''
+        label: Newsletter Form
+        description: Generic newsletter form
+        icon: wysiwyg
+        tags:
+          - Text
+        _inputs: {}
+      - value:
+          _bookshop_name: page-heading
+          title: ''
+          description: ''
+        label: Page Heading
+        description: Generic page heading
+        icon: wysiwyg
+        tags:
+          - Content
+        _inputs: {}
+      - value:
+          _bookshop_name: page-image
+          image: ''
+          image_alt: ''
+        label: Page Image
+        description: Page image
+        icon: wysiwyg
+        tags:
+          - Headers
+        _inputs: {}
+      - value:
+          _bookshop_name: posts-list
+          show_posts: true
+        label: Posts List
+        description: Lists all of the site's blog posts
+        icon: wysiwyg
+        tags:
+          - Collections
+        _inputs: {}
+      - value:
+          _bookshop_name: projects-list
+          show_projects: true
+        label: Projects List
+        description: Lists all of the site's projects
+        icon: wysiwyg
+        tags:
+          - Collections
+        _inputs: {}
+      - value:
+          _bookshop_name: projects-section
+          title: ''
+          description_html: ''
+          link_url: ''
+          show_projects: true
+        label: Projects
+        description: Projects Section with heading, a description and a link
+        icon: wysiwyg
+        tags:
+          - Content
+        _inputs: {}
+      - value:
+          _bookshop_name: testimonials-section
+          title: ''
+          description_html: ''
+          show_testimonials: true
+        label: Testimonials
+        description: Testimonials Section with heading, a description and a link
+        icon: wysiwyg
+        tags:
+          - Content
+        _inputs: {}
+_editables: {}
+data_config: {}
+timezone: Etc/UTC
