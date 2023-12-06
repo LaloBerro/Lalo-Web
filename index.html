@@ -41,24 +41,30 @@
     </nav>
 
     <section id="profile">
-        <div class="section__pic-container">
-            <img src="./Assets/profile-pic.png" alt="Lalo Berro Profile Picture">
+        <div class="profile-info">
+            <div class="section__pic-container">
+                <img src="./Assets/profile-pic.png" alt="Lalo Berro Profile Picture">
+            </div>
+            <div class="section__text">
+                <h1 class="title">Lalo Berro</h1>
+                <p class="section__text__p2"> Unity Programmer </p>
+                <div class="btn-container">
+                    <button class="btn btn-color-2" onclick="window.open('./Assets/CV_LaurencioBerro.pdf')">Download
+                        CV</button>
+                    <button class="btn btn-color-1" onclick="location.href = './index.html#contact'">Contact</button>
+                </div>
+                <div id="socials-container">
+                    <img src="./Assets/linkedin.png" alt="Linkedin Profile" class="icon"
+                        onclick="location.href='https://www.linkedin.com/in/laurencioberro/'">
+                    <img src="./Assets/github.png" alt="Linkedin Profile" class="icon"
+                        onclick="location.href='https://github.com/LaloBerro'">
+                </div>
+            </div>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1"> Hello, I'm </p>
-            <h1 class="title">Lalo Berro</h1>
-            <p class="section__text__p2"> Unity Programmer </p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./Assets/CV_LaurencioBerro.pdf')">Download
-                    CV</button>
-                <button class="btn btn-color-1" onclick="location.href = './index.html#contact'">Contact</button>
-            </div>
-            <div id="socials-container">
-                <img src="./Assets/linkedin.png" alt="Linkedin Profile" class="icon"
-                    onclick="location.href='https://www.linkedin.com/in/laurencioberro/'">
-                <img src="./Assets/github.png" alt="Linkedin Profile" class="icon"
-                    onclick="location.href='https://github.com/LaloBerro'">
-            </div>
+
+        <div class="profile-arrow-container">
+            <img src="./Assets/arrow.png" alt="Arrow Icon" class="icon arrow-profile"
+                onclick="location.href='./index.html#about'">
         </div>
     </section>
 
@@ -221,7 +227,7 @@
                     </div>
                     <h2 class="experience-sub-title project-title">DC Dual Force</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
+                        <button class="btn btn-color-1 project-btn"
                             onclick="location.href='https://store.steampowered.com/app/2442810/DC_Dual_Force/'">Steam</button>
                     </div>
                 </div>
@@ -231,7 +237,7 @@
                     </div>
                     <h2 class="experience-sub-title project-title">Alphaverse</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
+                        <button class="btn btn-color-1 project-btn"
                             onclick="location.href='https://www.youtube.com/watch?v=Zf9iFqRR_z0&ab_channel=Alphaverse'">Video</button>
                     </div>
                 </div>
@@ -241,7 +247,7 @@
                     </div>
                     <h2 class="experience-sub-title project-title">Xave World</h2>
                     <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn"
+                        <button class="btn btn-color-1 project-btn"
                             onclick="location.href='https://xave.world/'">Web</button>
                     </div>
                 </div>
@@ -264,6 +270,9 @@
                 <p><a href="https://linkedin.com">LinkedIn</a></p>
             </div>
         </div>
+
+        <img src="./Assets/arrow.png" alt="Arrow Icon" class="icon arrow-contact"
+                onclick="location.href='./index.html#profile'">
     </section>
 
     <footer>
