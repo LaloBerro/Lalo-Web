@@ -133,11 +133,7 @@ a:hover {
 /* SECTIONS */
 
 section {
-    padding-top: 4vh;
-    padding-left: 10%;
-    padding-right: 10%;
-    height: 96vh;
-    margin: 0 10rem;
+    margin: 0 5rem;
     box-sizing: border-box;
     min-height: fit-content;
 }
@@ -148,37 +144,46 @@ section {
 
 /* PROFILE SECTION */
 
-.outer {
+.main-cointainer{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 80vh;
-    margin-left: 10%;
-    margin-right: 10%;
+    /* background-color: firebrick; */
+}
+
+.profile-outer {
+    height: 93.1vh;
+    /*background-color: bisque;*/
 }
 
 .profile-container{
-    height: 100%;
-    width: 100%; 
-    /*background-color: aliceblue;*/
+    height: 1200px;
+    width: 1700px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8%;
+    /* background-color: rgb(11, 46, 77); */
 }
 
 .profile-top{
-    height: 20%;
-    /*background-color: blueviolet;*/
+    height: 10%;
+    width: 100%;
+    /* background-color: blueviolet; */
     display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .profile-top-left{
-    width: 20%;
+    width: 21%;
     height: 100%;
     /*background-color: aqua;*/
     display: flex;
 }
 
 .profile-top-center{
-    width: 20%;
-    height: 100%;
+    flex-grow: 1;
     /*background-color: darkred;*/
     display: flex;
 }
@@ -191,25 +196,28 @@ section {
 }
 
 .profile-bottom{
-    height: 80%;
-    /*background-color: red;*/
+    height: 70%;
+    /* background-color: red;  */
 }
 
 .profile-horizontal{
     position: relative;
     height: 100%;
     display: flex;
+    justify-content: space-between;
     /*background-color: blue;*/
 }
 
 .profile-lines{
-    width: 20%;
-    height: 100%;
-   /* background-color: forestgreen;*/
+    width: 15%;
+    height: 92%;
+    display: flex;
+    justify-content: left;
+    /*background-color: forestgreen;*/
 }
 
 .profile-image-lines{
-    width: 80%;
+    width: 84%;
     height: 100%;
    /* background-color: forestgreen;*/
 }
@@ -223,21 +231,35 @@ section {
 .profile-srprogrammer{
     width: 100%;
     height: 70%;
-   /*background-color: darkorange;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    /*background-color: darkorange;*/
 }
 
 .profile-unity-text{
     width: 100%;
-    height: 50%;
-    font-size: 16.5rem;
+    height: 63%;
+    font-size: 18rem;
     font-weight: 100;
+    /*background-color: blueviolet;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    line-height: 1;
+    text-align: center;
 }
 
 .profile-programmer-text{
     width: 100%;
-    height: 50%;
-    font-size: 11.5rem;
+    height: 37%;
+    font-size: 11.2rem;
     font-weight: 100;
+    /*background-color: aquamarine;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: center;
 }
 
 .profile-name{
@@ -249,15 +271,15 @@ section {
 
 .profile-socialandlinks{
     width: 100%;
-    height: 30%;
+    height: 22%;
     /*background-color: hotpink;*/
     display: flex;
 }
 
 .profile-socialandlinks-socialmediatext{
     width: 10%;
-    height: 100%;
-    /*background-color: aliceblue;*/
+    height: 85%;
+    /* background-color: aliceblue; */
     display: flex;
 }
 
@@ -271,21 +293,23 @@ section {
 
 .profile-socialandlinks-socialnetworks{
     width: 30%;
-    height: 100%;
-    /*background-color: aqua;*/
+    height: 85%;
+    /* background-color: aqua; */
     display: flex;
+    justify-content: center;
     gap: 12px;
 }
 
 .profile-socialandlinks-image{
-    width: 30%;
+    width: 40%;
     height: 100%;
-    /*background-color: purple;*/
+    /* background-color: purple; */
     display: flex;
+    justify-content: center;
 }
 
 .profile-socialandlinks-name{
-    width: 30%;
+    width: 20%;
     height: 100%;
    /* background-color: gold;*/
     position: relative;
@@ -298,9 +322,9 @@ section {
 }
 
 .smalltext{
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-family: SilkaMono_Regular;
-    font-weight: 50;
+    font-weight: lighter;
 }
 
 h1{
@@ -381,7 +405,7 @@ h1{
 
 .icon {
     cursor: pointer;
-    height: 2rem;
+    height: 3rem;
 }
 
 /* BUTTONS*/
@@ -421,9 +445,98 @@ h1{
 
 /* ABOUT SECTION */
 
-#about {
-    position: relative;
+.about-outer {
+    height: 200vh;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
 }
+
+.about-top-container{
+    height: 14%;
+    width: 100%;
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+}
+
+.about-top-alphaquadrant{
+    width: 20%;
+    background-color: beige;
+}
+
+.about-top-image{
+    width: 20%;
+    background-color: beige;
+}
+
+
+.about-center-container{
+    height: 14%;
+    width: 100%;
+    background-color: cornflowerblue;
+    display: flex;
+}
+
+.about-center-title{
+    width: 80%;
+    background-color: lightslategrey;
+}
+
+.about-center-righttexts{
+    width: 20%;
+    background-color: darkslategray;
+}
+
+.about-bottom-container{
+    flex-grow: 1;
+    width: 100%;
+    background-color: blueviolet;
+    display: flex;
+}
+
+.about-bottom-animation{
+    width: 50%;
+    margin: auto;
+    overflow: visible;
+    /* background-color: crimson; */
+}
+
+.about-animation{
+    width: 100%;
+    height: 100%;
+    margin-top: -1200px;
+    margin-left: -200px;
+}
+
+.about-bottom-information{
+    width: 50%;
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-botoom-information-description{
+    height: 33%;
+    width: 100%;
+    background-color: darkgoldenrod;
+}
+
+.about-bottom-information-studies{
+    height: 33%;
+    width: 100%;
+    background-color: darkolivegreen;
+}
+
+.about-bottom-information-image{
+    height: 33%;
+    width: 100%;
+    background-color: darkslateblue;
+}
+
+
+/*OLDER*/
 
 .about-containers {
     gap: 2rem;
