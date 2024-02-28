@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fffee9;
+        fill-rule: evenodd;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fffee9;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="Grupo_175" data-name="Grupo 175">
+      <g id="Grupo_174" data-name="Grupo 174">
+        <g id="Grupo_173" data-name="Grupo 173">
+          <path id="Trazado_1260" data-name="Trazado 1260" class="cls-1" d="M35.77,33.74h-4.22v-7.19c0-1.97-.75-3.07-2.31-3.07-1.7,0-2.58,1.15-2.58,3.07v7.19h-4.07v-13.7h4.07v1.84c.88-1.43,2.45-2.29,4.13-2.26,2.91,0,4.99,1.77,4.99,5.44v8.67ZM17.74,18.25c-1.4.01-2.54-1.11-2.55-2.51-.01-1.4,1.11-2.54,2.51-2.55,1.4-.01,2.54,1.11,2.55,2.51,0,0,0,.01,0,.02,0,1.39-1.12,2.52-2.51,2.53h0ZM15.64,33.74h4.24v-13.7h-4.24v13.7Z"/>
+        </g>
+      </g>
+      <circle id="Elipse_17" data-name="Elipse 17" class="cls-2" cx="25" cy="25" r="24"/>
+    </g>
+  </g>
+</svg>

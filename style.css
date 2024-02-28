@@ -1,18 +1,32 @@
 /* GENERAL */
 
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&family=Poppins:wght@300;400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
 * {
     margin: 0;
     padding: 0;
 }
 
-body {
-    /*font-family: 'Poppins', sans-serif;*/
-    font-family: 'Work Sans', sans-serif;
-    background-color: black;
+@font-face {
+    font-family: BARNEGAT;
+    src: url('Assets/Fonts/BARNEGAT-Regular.otf') format('truetype');
 }
+
+@font-face {
+    font-family: SilkaMono_Black;
+    src: url('Assets/Fonts/SilkaMono-Black.otf') format('truetype');
+}
+
+@font-face {
+    font-family: SilkaMono_Regular;
+    src: url('Assets/Fonts/SilkaMono-Regular.otf') format('truetype');
+}
+
+body {
+    font-family: BARNEGAT;
+    background-color: rgb(0, 0, 0);
+    background-image: url("Assets/Backgrounds/Complete.png");
+    background-size: cover;
+}
+
 
 html {
     scroll-behavior: smooth;
@@ -29,24 +43,45 @@ a,
     transition: all 300ms ease;
 }
 
+/* Backgrounds */
+
+.backgroundimg
+{
+    width: 100%;
+}
+
+
 /* DESKTOP NAV */
 
-nav,
+.element-to-move-front {
+  z-index: 1; /* set higher z-index value */
+  position: relative; /* position must be set for z-index to work */
+}
+
 .nav-links {
+    background-color: #000000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 90px;
+    z-index: 1;
+}
+
+.nav-links-list {
+    margin-top: 10px;
+    height: 20px;
     display: flex;
+    gap: 8rem;
+    justify-content: center;
 }
 
-nav {
-    justify-content: right;
-    align-items: center;
-    height: 17vh;
+.nav-button {
+    font-size: 1rem;
 }
 
-.nav-links {
-    gap: 2rem;
-    list-style: none;
-    font-size: 1.5rem;
-    margin-right: 10vh;
+.navbar-anim {
+    width: 100%;
+    height: 60px;
 }
 
 .top-blur-container {
@@ -94,90 +129,13 @@ a:hover {
     z-index: -100;
 }
 
-/* HAMBURGER MENU */
-
-#hamburger-nav {
-    display: none;
-}
-
-.hamburger-menu {
-    position: relative;
-    display: inline-block;
-}
-
-.hamburger-icon {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 24px;
-    width: 30px;
-    cursor: pointer;
-}
-
-.hamburger-icon span {
-    width: 100%;
-    height: 2px;
-    background-color: white;
-    transition: all 0.3 ease-in-out;
-}
-
-.menu-links {
-    position: absolute;
-    top: 100%;
-    right: 0%;
-    background-color: white;
-    width: fit-content;
-    max-height: 0;
-    overflow: hidden;
-    transition: all 0.3 ease-in-out;
-}
-
-.menu-links a {
-    display: block;
-    padding: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: black;
-    text-decoration: none;
-    transition: all 0.3 ease-in-out;
-}
-
-.menu-links li {
-    list-style: none;
-}
-
-.menu-links.open {
-    max-height: 300px;
-}
-
-.hamburger-icon.open span:first-child {
-    transform: rotate(45deg) translate(10px, 5px);
-}
-
-.hamburger-icon.open span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger-icon.open span:last-child {
-    transform: rotate(-45deg) translate(10px, -5px);
-}
-
-.hamburger-icon span:first-child {
-    transform: none;
-}
-
-.hamburger-icon span:first-child {
-    opacity: 1;
-}
-
-.hamburger-icon span:first-child {
-    transform: none;
-}
 
 /* SECTIONS */
 
 section {
     padding-top: 4vh;
+    padding-left: 10%;
+    padding-right: 10%;
     height: 96vh;
     margin: 0 10rem;
     box-sizing: border-box;
@@ -190,21 +148,166 @@ section {
 
 /* PROFILE SECTION */
 
-#profile {
-    display: inline;
-    justify-content: center;
-    gap: 5rem;
-    height: 80vh;
-    vertical-align: auto;
-}
-
-.profile-info {
+.outer {
     display: flex;
     justify-content: center;
-    gap: 5rem;
-    height: 70vh;
-    vertical-align: baseline;
+    align-items: center;
+    height: 80vh;
+    margin-left: 10%;
+    margin-right: 10%;
 }
+
+.profile-container{
+    height: 100%;
+    width: 100%; 
+    /*background-color: aliceblue;*/
+}
+
+.profile-top{
+    height: 20%;
+    /*background-color: blueviolet;*/
+    display: flex;
+}
+
+.profile-top-left{
+    width: 20%;
+    height: 100%;
+    /*background-color: aqua;*/
+    display: flex;
+}
+
+.profile-top-center{
+    width: 20%;
+    height: 100%;
+    /*background-color: darkred;*/
+    display: flex;
+}
+
+.profile-top-right{
+    width: 60%;
+    height: 100%;
+    /*background-color: darksalmon;*/
+    position: relative;
+}
+
+.profile-bottom{
+    height: 80%;
+    /*background-color: red;*/
+}
+
+.profile-horizontal{
+    position: relative;
+    height: 100%;
+    display: flex;
+    /*background-color: blue;*/
+}
+
+.profile-lines{
+    width: 20%;
+    height: 100%;
+   /* background-color: forestgreen;*/
+}
+
+.profile-image-lines{
+    width: 80%;
+    height: 100%;
+   /* background-color: forestgreen;*/
+}
+
+.profile-inner-content{
+    width: 80%;
+    height: 100%;
+    /*background-color: chartreuse;*/
+}
+
+.profile-srprogrammer{
+    width: 100%;
+    height: 70%;
+   /*background-color: darkorange;*/
+}
+
+.profile-unity-text{
+    width: 100%;
+    height: 50%;
+    font-size: 16.5rem;
+    font-weight: 100;
+}
+
+.profile-programmer-text{
+    width: 100%;
+    height: 50%;
+    font-size: 11.5rem;
+    font-weight: 100;
+}
+
+.profile-name{
+    font-size: 4rem;
+    font-weight: 100;
+    text-align: right;
+    line-height: 85%;
+}
+
+.profile-socialandlinks{
+    width: 100%;
+    height: 30%;
+    /*background-color: hotpink;*/
+    display: flex;
+}
+
+.profile-socialandlinks-socialmediatext{
+    width: 10%;
+    height: 100%;
+    /*background-color: aliceblue;*/
+    display: flex;
+}
+
+.bottom{
+    align-self: flex-end;
+}
+
+.image-bottomcenter{
+    align-self:flex-end;
+}
+
+.profile-socialandlinks-socialnetworks{
+    width: 30%;
+    height: 100%;
+    /*background-color: aqua;*/
+    display: flex;
+    gap: 12px;
+}
+
+.profile-socialandlinks-image{
+    width: 30%;
+    height: 100%;
+    /*background-color: purple;*/
+    display: flex;
+}
+
+.profile-socialandlinks-name{
+    width: 30%;
+    height: 100%;
+   /* background-color: gold;*/
+    position: relative;
+}
+
+.profile-position-name {
+    position:absolute;
+    bottom:0;
+    right:0;
+}
+
+.smalltext{
+    font-size: 1rem;
+    font-family: SilkaMono_Regular;
+    font-weight: 50;
+}
+
+h1{
+    color: white;
+}
+
+/* Older */
 
 .profile-arrow-container {
     display: flex;
@@ -300,7 +403,7 @@ section {
 
 .btn-color-1,
 .btn-color-2 {
-    background-color: rgba(67,59,168,255);
+    background-color: rgba(67, 59, 168, 255);
     color: white;
     border-color: transparent;
 }

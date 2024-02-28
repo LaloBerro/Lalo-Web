@@ -13,36 +13,81 @@
 <body>
     <nav id="desktop-nav">
         <div>
-            <ul class="nav-links">
-                <li><a href="#about">about</a></li>
-                <li><a href="#experience">experience</a></li>
-                <li><a href="#projects">projects</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
+            <div class="nav-links">
+                <ul class="nav-links-list">
+                    <li><a class="nav-button" href="#about">ABOUT</a></li>
+                    <li><a class="nav-button" href="#experience">EXPERIENCE</a></li>
+                    <li><a class="nav-button" href="#projects">SKILLS</a></li>
+                    <li><a class="nav-button" href="#contact">PROJETCS</a></li>
+                    <li><a class="nav-button" href="#contact">BLOG</a></li>
+                    <li><a class="nav-button" href="#contact">REEL</a></li>
+                </ul>
+
+                <lottie-player class="navbar-anim" src="Assets/0_Potrait/00_header.json" background="transparent"
+                    speed="1" loop autoplay>
+                </lottie-player>
+            </div>
+
         </div>
 
         <div class="gradient-top">
         </div>
     </nav>
 
-    <nav id="hamburger-nav">
-        <div class="gradient-top">
-        </div>
-        <div class="logo"> Lalo Berro </div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
+    <section id="profile"></section>
+    <div class="outer">
+        <div class="profile-container">
+            <div class="profile-top">
+                <div class="profile-top-left">
+                    <h1 class="smalltext bottom"> >><br> >><br><br>00</h1>
+                </div>
+
+                <div class="profile-top-center">
+                    <h1 class="smalltext bottom">MENDOZA</h1>
+                </div>
+
+                <div class="profile-top-right">
+                    <h1 class="smalltext profile-position-name">ARGENTINA</h1>
+                </div>
             </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+
+            <div class="profile-bottom">
+                <div class="profile-horizontal">
+                    <div class="profile-lines">
+                        <img src="./Assets/0_Potrait/00_portada_barralateral.svg" class="profile-image-lines">
+                    </div>
+                    <div class="profile-inner-content">
+                        <div class="profile-srprogrammer">
+                            <h1 class="profile-unity-text">SR. UNITY</h1>
+                            <h1 class="profile-programmer-text">PROGRAMMER</h1>
+                        </div>
+                        <div class="profile-socialandlinks">
+                            <div class="profile-socialandlinks-socialmediatext">
+                                <h1 class="smalltext bottom">SOCIAL<br>MEDIA</h1>
+                            </div>
+                            <div class="profile-socialandlinks-socialnetworks">
+                                <img src="./Assets/0_Potrait/Icons/Linkedin.svg" alt="LinkedIn" class="icon bottom" onclick="location.href='https://www.linkedin.com/in/laurencioberro/'">
+                                <img src="./Assets/0_Potrait/Icons/GitHub.svg" alt="github" class="icon bottom" onclick="location.href='https://www.linkedin.com/in/laurencioberro/'">
+                                <img src="./Assets/0_Potrait/Icons/CV.svg" alt="cv" class="icon bottom" onclick="location.href='https://www.linkedin.com/in/laurencioberro/'">
+                                <img src="./Assets/0_Potrait/Icons/Medium.svg" alt="medium" class="icon bottom" onclick="location.href='https://www.linkedin.com/in/laurencioberro/'">
+                                <img src="./Assets/0_Potrait/Icons/Mail.svg" alt="mail" class="icon bottom" onclick="location.href='https://www.linkedin.com/in/laurencioberro/'">
+                            </div>
+                            <div class="profile-socialandlinks-image"> 
+                                <img src="./Assets/0_Potrait/00_portada_ilustracion.svg" class="image-bottomcenter">
+                            </div>
+                            <div class="profile-socialandlinks-name">
+                                <h1 class="profile-position-name profile-name">Lalo<br>Berro</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
+
+    </section>
+
+    <!--
 
     <section id="profile">
         <div class="profile-info">
@@ -75,6 +120,8 @@
 
         </div>
     </section>
+
+-->
 
     <section id="about">
         <p class="section__text__p1">Get to know more </p>
@@ -280,24 +327,19 @@
         </div>
 
         <img src="./Assets/arrow.png" alt="Arrow Icon" class="icon arrow-contact"
-                onclick="location.href='./index.html#profile'">
+            onclick="location.href='./index.html#profile'">
     </section>
 
     <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
         <p>Copyrights &#169; 2023 Lalo Berro. All rights reserved </p>
     </footer>
 
     <script src="script.js"></script>
+    <script src="animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+    </lottie-player>
 </body>
 
 </html>
