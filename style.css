@@ -892,14 +892,14 @@ p {
 }
 
 .middle-text {
-    width: 250px;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    line-height: 0.9;
     text-align: right;
 }
 
 .middle-text-left {
-    width: 250px;
-    font-size: 3rem;
+    font-size: 3.5rem;
+    line-height: 0.9;
     text-align: left;
 }
 
@@ -1102,15 +1102,128 @@ p {
 }
 
 
+/* BLOG */
 
+.blog-outer {
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* background-color: bisque; */
+}
 
+.blog-top-container{
+    width: 100%;
+    height: 27%;
+    display: flex;
+    /* background-color: darkorange; */
+}
 
+.blog-top-title-container{
+    height: 100%;
+    width: 65%;
+    /* background-color: lightgreen; */
+}
 
+.blog-top-title{
+    height: 51%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color:cadetblue; */
+}
 
+.blog-top-image-container{
+    height: 100%;
+    width: 35%;
+    /* background-color: green; */
+}
 
+.blog-top-image{
+    width: 100%;
+    height: 100%;
+}
 
+.blog-top-subtitle{
+    width: 20%;
+    text-align: right;
+}
 
+.blog-center-container{
+    width: 100%;
+    height: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    /* background-color: gold; */
+}
 
+.blog-center-maintitle-container{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* background-color: blue; */
+}
+
+.blog-center-maintitle-animation {
+    width: 100%;
+    height: 80%;
+    /* background-color: aquamarine; */
+}
+
+.blog-animation {
+    width: 1200px;
+    height: 1200px;
+    margin-top: -550px;
+    margin-left: -200px;
+}
+
+.blog-center-content-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color:aqua; */
+}
+
+.blog-center-content-item{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: end;
+    gap: 80px;
+    /* background-color: violet; */
+}
+
+.blog-center-content-item-title{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    /* background-color: blue; */
+}
+
+.blog-center-content-item-items{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: aquamarine; */
+}
+
+.blog-center-content-item-items-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog-item-title-text{
+    font-family: SilkaMono_Regular;
+    font-size: 1.2rem;
+}
 
 
 
