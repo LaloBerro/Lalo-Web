@@ -1225,18 +1225,96 @@ p {
     font-size: 1.2rem;
 }
 
+/* REEL */
 
+.reel-outer {
+    height: 2000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* background-color: yellowgreen; */
+}
 
+.reel-top-container{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    /* background-color: darkorange; */
+}
 
+.reel-top-title-container{
+    height: 100%;
+    width: 65%;
+    /* background-color: lightgreen; */
+}
 
+.reel-top-title{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color:cadetblue; */
+}
 
+.reel-top-image-container{
+    height: 100%;
+    width: 35%;
+    /* background-color: green; */
+}
 
+.reel-top-image{
+    width: 100%;
+    height: 100%;
+}
 
+.reel-top-subtitle{
+    width: 20%;
+    text-align: right;
+}
 
+.reel-bottom-container{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    /* background-color: darkorange; */
+}
 
+.reel-center-maintitle-animation {
+    width: 100%;
+    height: 10px;
+    /* background-color: aquamarine; */
+}
 
+.reel-animation {
+    width: 1000px;
+    height: 1000px;
+    margin-top: -350px;
+    margin-left: -250px;
+}
 
+.reel-youtube-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: indigo */
+}
 
+.reel-youtube-stroke{
+    width: 70%;
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+.youtube{
+    width: 99.8%;
+    height: 99.8%;
+}
 
 
 
