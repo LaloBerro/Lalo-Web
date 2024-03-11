@@ -1228,7 +1228,7 @@ p {
 /* REEL */
 
 .reel-outer {
-    height: 2000px;
+    height: 1500px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -1282,7 +1282,7 @@ p {
 
 .reel-center-maintitle-animation {
     width: 100%;
-    height: 10px;
+    height: 200px;
     /* background-color: aquamarine; */
 }
 
@@ -1304,7 +1304,7 @@ p {
 
 .reel-youtube-stroke{
     width: 70%;
-    height: 65%;
+    height: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1315,6 +1315,143 @@ p {
     width: 99.8%;
     height: 99.8%;
 }
+
+/* NEXT */
+
+.next-outer {
+    height: 1500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    /* background-color: yellowgreen; */
+}
+
+.next-top-container{
+    width: 100%;
+    height: 280px;
+    display: flex;
+    /* background-color: darkorange; */
+}
+
+.next-top-container{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    /* background-color: darkorange;  */
+}
+
+.next-top-title-container{
+    height: 100%;
+    width: 55%;
+    /* background-color: lightgreen; */
+}
+
+.next-top-title{
+    height: 51%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color:cadetblue; */
+}
+
+.next-top-subtitle{
+    width: 5%;
+    height: 100%;
+    text-align: right;
+}
+
+.next-center-maintitle-animation {
+    width: 65%;
+    height: 200px;
+    /* background-color: aquamarine; */
+}
+
+.next-animation {
+    width: 1000px;
+    height: 1000px;
+    margin-top: -200px;
+    margin-left: -100px;
+}
+
+
+.next-bottom-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* background-color: darkturquoise; */
+}
+
+.next-socials{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: darkorchid; */
+}
+
+.next-socials-container{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    /* background-color: darkolivegreen; */
+}
+
+.next-socialandlinks-socialnetworks{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: coral; */
+}
+
+.next-socialandlinks-socialmediatext{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+/* FOOTER */
+
+footer {
+    height: 15vh;
+    margin: 0 1rem;
+}
+
+footer{
+    text-align: center;
+}
+
+.footer-final{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1597,15 +1734,4 @@ article .icon {
 
 .btn-container {
     gap: 1rem;
-}
-
-/* FOOTER */
-
-footer {
-    height: 26vh;
-    margin: 0 1rem;
-}
-
-footer p {
-    text-align: center;
 }
