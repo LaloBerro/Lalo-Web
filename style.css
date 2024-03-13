@@ -375,6 +375,12 @@ section {
     font-weight: lighter;
 }
 
+.smalltext-light {
+    font-size: 1rem;
+    font-family: SilkaMono_ExtraLight;
+    font-weight: lighter;
+}
+
 p {
     color: #FFFEE9;
 }
@@ -802,7 +808,7 @@ p {
 /* SKILLS */
 
 .skills-outer {
-    height: 2000px;
+    height: 1600px;
     display: flex;
     flex-direction: column;
     justify-content: start;
@@ -835,7 +841,7 @@ p {
 }
 
 .skills-bottom-container {
-    height: 40%;
+    height: 80%;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -856,6 +862,12 @@ p {
     margin-left: -100px;
 }
 
+.skills-bottom-container-animation{
+    width: 30%;
+    height: 100%;
+    /* background-color: aquamarine; */
+}
+
 .skills-bottom-container-image {
     width: 100%;
     height: 50%;
@@ -863,18 +875,18 @@ p {
 
 .skillsillu {
     width: 100%;
-    height: 100%;
+    height: 50%;
 }
 
 .skills-list-container {
-    width: 60%;
+    width: 100%;
     height: 100%;
     /* background-color: crimson; */
 }
 
 .skills-list-space {
     width: 100%;
-    height: 20%;
+    height: 5%;
     /* background-color: aquamarine; */
 }
 
@@ -882,9 +894,17 @@ p {
     width: 100%;
     height: 80%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 40px;
     /* background-color: darkslategrey;   */
+}
+
+.skills-column{
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 50px;
 }
 
 .skill-item {
@@ -894,7 +914,7 @@ p {
 }
 
 .skill-item-title{
-    width: 30%;
+    /* width: 34%; */
 }
 
 .middle-text {
@@ -914,6 +934,7 @@ p {
     line-height: 2.5;
     font-weight: lighter;
     font-family: SilkaMono_Regular;
+    /* background-color: darkmagenta; */
 }
 
 /*  PROJECTS  */
@@ -1006,14 +1027,14 @@ p {
 
 .projects-center-mainprojects-container {
     width: 100%;
-    height: 20%;
+    height: 30%;
     display: flex;
     justify-content: end;
     /* background-color:aqua; */
 }
 
 .projects-container {
-    width: 51%;
+    width: 55%;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -1033,7 +1054,7 @@ p {
 }
 
 .project-item-image-container {
-    width: 30%;
+    width: 40%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -1057,10 +1078,17 @@ p {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 50%;
+}
+
+.project-item-text-description{
+    height: 100%;
+    /* background-color: darkorange; */
 }
 
 .descriptiontext1 {
-    font-family: SilkaMono_Regular;
+    font-family: SilkaMono_Light;
+    line-height: 1.5;
     font-size: 1.05rem;
 }
 
@@ -1088,7 +1116,7 @@ p {
 
 .projects-center-others-grid {
     height: 100%;
-    width: 51%;
+    width: 55%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1107,7 +1135,6 @@ p {
     justify-content: space-between;
     /* background-color: chocolate; */
 }
-
 
 /* BLOG */
 
