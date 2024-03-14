@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fffee9;
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: none;
+        stroke: #fffee9;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g id="Grupo_181" data-name="Grupo 181">
+      <g id="Grupo_179" data-name="Grupo 179">
+        <circle id="Elipse_20" data-name="Elipse 20" class="cls-2" cx="25" cy="25" r="24"/>
+      </g>
+      <g id="Grupo_180" data-name="Grupo 180">
+        <path id="Trazado_1266" data-name="Trazado 1266" class="cls-1" d="M25.01,28.67l9.47-5.33v8.56H15.53v-8.56l9.48,5.33Z"/>
+        <path id="Trazado_1267" data-name="Trazado 1267" class="cls-1" d="M34.48,18.09v2.45l-9.47,5.33-9.48-5.33v-2.45h18.95Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
